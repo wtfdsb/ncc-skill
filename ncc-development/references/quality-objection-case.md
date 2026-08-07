@@ -30,3 +30,13 @@
 - 联系人手机号不在用户表时，通过用户的人员档案外键查询，不能猜测手机号列。
 - `TRANSTYPEPK` 的非空约束来自生成单据模型，新增必须获得交易类型上下文。
 - Action 源码存在并不等于运行时可调用；XML、部署和重启缺一不可。
+
+## 后续已验证扩展
+
+- 质检报告窗口“部门”显示物料所在车间：`QC_REPORTBILL.PK_PUDEPT → ORG_DEPT.PK_DEPT`；不要误用 `PK_APPLYDEPT_V`。
+- 质检报告表没有 `MATERIALNAME`，取物料名称需关联 `BD_MATERIAL_V` 子查询（`MAX(NAME)` 按 `PK_MATERIAL` 分组）。
+- 选择质检报告带出合同号：`QC_REPORTBILL_B.VBDEF7` → 质量异议 `def1`；更换/清空质检报告时清旧值。
+- 联系人按 `BD_PSNJOB` 最新 `INDUTYDATE` 且 `ISMAINJOB='Y'` 去重，每人一行，再过滤“工段长/车间主任”岗位。
+- 异议描述、原因分析、损失情况在 `initMeta` 强制 `itemtype='textarea'`、`rows=2`，页面模板再配整行布局。
+- 导出报“根据上机单无法获取到参照信息”：Excel 单据定义 XML 中自定义参照类型字段且 `<basdoc>` 为空，改为 `String` 类型。
+- 审批自动生成供应商扣款单的完整字段映射与坑位见 [quality-objection-approval-sync.md](quality-objection-approval-sync.md)。

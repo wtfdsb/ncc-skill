@@ -16,6 +16,22 @@
 | `SM_USER` | 用户，关联人员档案字段 `PK_PSNDOC` |
 | `BD_PSNDOC` | 人员档案，手机号字段以当前环境列定义为准 |
 | `ORG_DEPT` | 部门/车间名称，常用 `PK_DEPT` 关联 |
+| `ORG_DEPT_V` | 部门版本档案，`PK_VID` 是版本主键；业务表存部门主键时不要写版本主键 |
+| `LCZJ_SUPPLIERDEDUCTION` | 供应商扣款单主表，`BILLNO`、`PK_DEPT`、`DEF1-5`、`CORIGCURRENCYID` |
+| `LCZJ_SUPPLIERDEDUCTION_H` | 扣款单表体，`VBDEF1-20`、`CSOURCEBILLID/BID`、`REASON/MEMO`；来源字段常存来源单据主键 |
+| `QC_REPORTBILL_B` | 质检报告表体，案例中合同号在 `VBDEF7` |
+| `V_MATERIAL_PRICE_BJDJ` | 物料单价视图，`PK_MATERIAL`、`NQTORIGTAXPRICE`（含税单价） |
+| `PO_ARRIVEORDER_B` | 到货表体，`PK_ARRIVEORDER_B`、`PK_MATERIAL`、`PK_ORDER`、`CSOURCEBID` |
+| `PO_ORDER` | 采购订单主表，`PK_ORDER`、`VBILLCODE` |
+| `PO_ORDER_B` | 采购订单表体，`NQTORIGTAXPRICE`、`VCONTRACTCODE` |
+| `BD_PSNJOB` | 人员任职，`INDUTYDATE`、`ISMAINJOB`；取当前岗位用任职日期最新且主职记录 |
+| `OM_POST` | 岗位，`PK_POST`、`POSTNAME` |
+
+## 已验证字段语义
+
+- `QC_REPORTBILL.PK_APPLYDEPT` 是报检部门主键；`PK_APPLYDEPT_V` 是部门版本主键；`PK_PUDEPT` 是物料所在车间部门。三者含义不同，写目标表前先确认目标字段存主档主键还是版本主键。
+- 质检报告表没有物料名称列；取名称需用 `QC_REPORTBILL.PK_MATERIAL` 关联 `BD_MATERIAL_V`（按 `PK_MATERIAL` 分组取 `MAX(NAME)` 防重复）。
+- 到货单主键（表头）与到货单表体主键不同：`PO_ARRIVEORDER.PK_ARRIVEORDER` 对 `PO_ARRIVEORDER_B.PK_ARRIVEORDER_B`。
 
 ## 验证关系
 

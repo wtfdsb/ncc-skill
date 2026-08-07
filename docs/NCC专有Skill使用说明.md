@@ -1,7 +1,7 @@
 # NCC 专有 Skill 使用说明
 
-版本：1.0.0  
-发布日期：2026-08-01  
+版本：1.1.0  
+发布日期：2026-08-07  
 Skill 名称：`ncc-development`
 
 ## 1. 用途与适用范围
@@ -18,7 +18,7 @@ Skill 面向整个 NCC 项目，不限定 EMS 模块。包内“质量异议上�
 
 ## 2. 安装
 
-1. 解压 `ncc-development-v1.0.0.zip`，得到唯一目录 `ncc-development`。
+1. 解压 `ncc-development-v1.1.0.zip`，得到唯一目录 `ncc-development`。
 2. 将该目录复制到：
 
    ```text

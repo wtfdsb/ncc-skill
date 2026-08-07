@@ -16,7 +16,7 @@
 
 ### 方式一：使用发布压缩包
 
-1. 下载 [`release/ncc-development-v1.0.0.zip`](release/ncc-development-v1.0.0.zip)。
+1. 下载 [`release/ncc-development-v1.1.0.zip`](release/ncc-development-v1.1.0.zip)。
 2. 解压后得到 `ncc-development` 目录。
 3. 将目录复制到：
 
@@ -57,5 +57,5 @@ Skill 包含可选的 SQLcl MCP 接入规范。数据库连接由使用者在本
 
 ## 版本
 
-当前发布版本：`1.0.0`  
+当前发布版本：`1.1.0`  
 校验值见 [`SHA256SUMS.txt`](SHA256SUMS.txt)。

@@ -30,6 +30,7 @@ Treat the checked source tree, deployed files, runtime payloads, and database sc
 - Error-to-evidence diagnosis: read [debugging-playbook.md](references/debugging-playbook.md).
 - Oracle SQLcl MCP access: read [oracle-access.md](references/oracle-access.md) before any database command.
 - Verified EMS quality-objection example: read [quality-objection-case.md](references/quality-objection-case.md).
+- Approval auto-generates a downstream bill (quality objection -> supplier deduction): read [quality-objection-approval-sync.md](references/quality-objection-approval-sync.md).
 
 ## Non-negotiable database policy
 
