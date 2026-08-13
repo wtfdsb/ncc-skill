@@ -1,12 +1,12 @@
 # NCC 专有 Skill 使用说明
 
-版本：1.1.0  
+版本：1.2.0  
 发布日期：2026-08-07  
-Skill 名称：`ncc-development`
+Skill 名称：`ncc-ems-development`
 
 ## 1. 用途与适用范围
 
-`ncc-development` 用于辅助 NCC/NCCloud 项目的开发、扩展、诊断、部署与测试，覆盖：
+`ncc-ems-development` 用于辅助 NCC/NCCloud 项目的开发、扩展、诊断、部署与测试，覆盖：
 
 - BMF 元数据、建表脚本、VO 与代码生成；
 - NCC 前端 `index.js`、页面模板、参照、联动和自动带出；
@@ -18,17 +18,17 @@ Skill 面向整个 NCC 项目，不限定 EMS 模块。包内“质量异议上�
 
 ## 2. 安装
 
-1. 解压 `ncc-development-v1.1.0.zip`，得到唯一目录 `ncc-development`。
+1. 解压 `ncc-ems-development-v1.2.0.zip`，得到唯一目录 `ncc-ems-development`。
 2. 将该目录复制到：
 
    ```text
-   %USERPROFILE%\.codex\skills\ncc-development
+   %USERPROFILE%\.codex\skills\ncc-ems-development
    ```
 
 3. 确认以下文件存在：
 
    ```text
-   %USERPROFILE%\.codex\skills\ncc-development\SKILL.md
+   %USERPROFILE%\.codex\skills\ncc-ems-development\SKILL.md
    ```
 
 4. 完全重启 Codex，或新建一个任务后再使用。
@@ -36,7 +36,7 @@ Skill 面向整个 NCC 项目，不限定 EMS 模块。包内“质量异议上�
 兼容其他 Agent 运行环境时，可另行复制到：
 
 ```text
-~/.agents/skills/ncc-development
+~/.agents/skills/ncc-ems-development
 ```
 
 ## 3. 基本使用
@@ -44,7 +44,7 @@ Skill 面向整个 NCC 项目，不限定 EMS 模块。包内“质量异议上�
 显式调用方式：
 
 ```text
-使用 $ncc-development，帮我定位某 NCC 模块新增按钮对应的后端 Action。
+使用 $ncc-ems-development，帮我定位某 NCC 模块新增按钮对应的后端 Action。
 ```
 
 也可以直接描述 NCC 开发问题；当任务明显涉及元数据、页面模板、Action、参照、Oracle 或部署时，Codex 会按 Skill 流程处理。
@@ -60,12 +60,12 @@ Skill 面向整个 NCC 项目，不限定 EMS 模块。包内“质量异议上�
 示例：
 
 ```text
-使用 $ncc-development。项目根目录是 <NCC_WORKSPACE>，模块是 qualityobjection。
+使用 $ncc-ems-development。项目根目录是 <NCC_WORKSPACE>，模块是 qualityobjection。
 请检查“找不到活动名”错误，只做诊断，不修改文件。
 ```
 
 ```text
-使用 $ncc-development，检查 BMF、VO、页面模板、前端 index.js、Java Action、XML 和数据库字段是否一致。
+使用 $ncc-ems-development，检查 BMF、VO、页面模板、前端 index.js、Java Action、XML 和数据库字段是否一致。
 ```
 
 ## 4. 只读检查脚本
@@ -129,21 +129,21 @@ JAVA_HOME = '<JAVA_17_OR_21_HOME>'
 更新：
 
 1. 备份本地自己添加的参考资料；
-2. 用新版 `ncc-development` 目录整体替换旧目录；
+2. 用新版 `ncc-ems-development` 目录整体替换旧目录；
 3. 完全重启 Codex；
-4. 新建任务执行一次 `$ncc-development` 验证。
+4. 新建任务执行一次 `$ncc-ems-development` 验证。
 
 卸载：删除以下目录并重启 Codex：
 
 ```text
-%USERPROFILE%\.codex\skills\ncc-development
+%USERPROFILE%\.codex\skills\ncc-ems-development
 ```
 
 ## 8. 常见问题
 
-### 8.1 输入 `$ncc-development` 没有生效
+### 8.1 输入 `$ncc-ems-development` 没有生效
 
-检查目录层级，确保不是 `ncc-development\ncc-development\SKILL.md`；然后完全重启 Codex并新建任务。
+检查目录层级，确保不是 `ncc-ems-development\ncc-ems-development\SKILL.md`；然后完全重启 Codex并新建任务。
 
 ### 8.2 Skill 找不到项目文件
 

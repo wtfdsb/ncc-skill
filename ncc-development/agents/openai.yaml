@@ -1,6 +1,0 @@
-interface:
-  display_name: "NCC 开发"
-  short_description: "NCC 模块开发、数据库核验、部署与系统排错知识库"
-  default_prompt: "Use $ncc-development to inspect and safely implement this NCC requirement."
-policy:
-  allow_implicit_invocation: true

@@ -16,24 +16,24 @@
 
 ### 方式一：使用发布压缩包
 
-1. 下载 [`release/ncc-development-v1.1.0.zip`](release/ncc-development-v1.1.0.zip)。
-2. 解压后得到 `ncc-development` 目录。
+1. 下载 [`release/ncc-ems-development-v1.2.0.zip`](release/ncc-ems-development-v1.2.0.zip)。
+2. 解压后得到 `ncc-ems-development` 目录。
 3. 将目录复制到：
 
    ```text
-   %USERPROFILE%\.codex\skills\ncc-development
+   %USERPROFILE%\.codex\skills\ncc-ems-development
    ```
 
 4. 完全重启 Codex，或新建一个任务。
 
 ### 方式二：直接复制源码目录
 
-将仓库中的 [`ncc-development`](ncc-development) 目录复制到 `%USERPROFILE%\.codex\skills\`。
+将仓库中的 [`ncc-ems-development`](ncc-ems-development) 目录复制到 `%USERPROFILE%\.codex\skills\`。
 
 ## 使用
 
 ```text
-使用 $ncc-development，帮我定位某 NCC 模块新增按钮对应的后端 Action。
+使用 $ncc-ems-development，帮我定位某 NCC 模块新增按钮对应的后端 Action。
 ```
 
 首次提问建议提供项目根目录、模块名称、应用/页面编码、报错文本或 Network 请求，并明确希望“只诊断”还是“直接修改”。
@@ -57,5 +57,5 @@ Skill 包含可选的 SQLcl MCP 接入规范。数据库连接由使用者在本
 
 ## 版本
 
-当前发布版本：`1.1.0`  
+当前发布版本：`1.2.0`  
 校验值见 [`SHA256SUMS.txt`](SHA256SUMS.txt)。
