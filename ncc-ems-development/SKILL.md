@@ -32,6 +32,7 @@ Treat the checked source tree, deployed files, runtime payloads, and database sc
 - Verified quality-objection example: read [quality-objection-case.md](references/quality-objection-case.md).
 - Approval auto-generates a downstream bill (quality objection -> supplier deduction): read [quality-objection-approval-sync.md](references/quality-objection-approval-sync.md).
 - Approval-stage image uploads, dual React pages, attachment suffix mapping, workflow validation, and patch packaging: read [approval-picture-workflow.md](references/approval-picture-workflow.md).
+- DingTalk App approval REST endpoints, field/suffix mapping, and approval-node name resolution: read [dingtalk-app-approval.md](references/dingtalk-app-approval.md).
 
 ## Non-negotiable database policy
 

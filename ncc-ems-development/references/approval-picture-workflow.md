@@ -173,3 +173,7 @@ Report patch contents by runtime target, not source extension alone:
 - submit/save/service classes only when maker validation changed.
 
 State which files require NCC restart and which require browser hard refresh.
+
+## App / DingTalk side
+
+For the DingTalk App REST endpoints (DingdingServiceResources.java), the stage-to-field/suffix contract, and approval-node-name (stageName) resolution, read [dingtalk-app-approval.md](dingtalk-app-approval.md).
