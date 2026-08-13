@@ -33,6 +33,7 @@ Treat the checked source tree, deployed files, runtime payloads, and database sc
 - Approval auto-generates a downstream bill (quality objection -> supplier deduction): read [quality-objection-approval-sync.md](references/quality-objection-approval-sync.md).
 - Approval-stage image uploads, dual React pages, attachment suffix mapping, workflow validation, and patch packaging: read [approval-picture-workflow.md](references/approval-picture-workflow.md).
 - DingTalk App approval REST endpoints, field/suffix mapping, and approval-node name resolution: read [dingtalk-app-approval.md](references/dingtalk-app-approval.md).
+- Spare-parts-scrap picture approval full case study (field remapping, workflow-node stage resolution, centralized rule classes, App endpoints): read [sparepartscrap-picture-approval-case.md](references/sparepartscrap-picture-approval-case.md).
 
 ## Non-negotiable database policy
 
