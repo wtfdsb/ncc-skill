@@ -27,6 +27,7 @@ Evidence first: source tree, deployed files, runtime payloads, DB schema are fac
 - [oracle-access.md](references/oracle-access.md) — SQLcl (read before any DB command)
 - [quality-objection-case.md](references/quality-objection-case.md) + [quality-objection-approval-sync.md](references/quality-objection-approval-sync.md) — QC case & downstream sync
 - [approval-picture.md](references/approval-picture.md) — approval-picture fields / suffix / stage / App
+- [sparepart-repair-approval.md](references/sparepart-repair-approval.md) — repair approval 4-level photo fields / EMS_REPAIRFLOW / stageName
 
 ## Database policy
 
